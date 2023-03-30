@@ -40,6 +40,7 @@ cd mydsite
 ```sh
 python manage.py runserver
 ```
+This will start the development server at http://localhost:8000/. You can visit this URL in your web browser to see the default Django welcome page.
 
 ## Author
 
