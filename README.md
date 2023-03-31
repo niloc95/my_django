@@ -34,6 +34,7 @@ pip install Django
 ```
 
 ```sh
+cd myNewSite
 cd mydsite
 ```
 ## Run Server
