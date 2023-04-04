@@ -5,6 +5,15 @@ from . forms import RegisterForm
 
 # Create your views here.
 def base(request):
+    '''
+    Renders the base.html template.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: A response containing the rendered base.html template.
+    '''
     return render(request,'base.html')
 
 def home(request):
