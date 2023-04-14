@@ -5,3 +5,54 @@ https://unsplash.com/collections/_IRw3IU2dbw/renewable-energy
 
 Django_Bootstrap_Website
 A modern responsive website, build with Django, Bootstrap, Crispy forms and SQLite
+
+
+sudo cp /opt/bitnami/apache/conf/vhosts/my_django-vhost.conf.disabled /opt/bitnami/apache/conf/vhosts/my_django-vhost.conf
+sudo nano /opt/bitnami/apache/conf/vhosts/my_django-http-vhost.conf
+<IfDefine !IS_my_django_LOADED>
+    Define IS_my_django_LOADED
+    WSGIDaemonProcess my_django python-home=/opt/bitnami/python python-path=/opt/bitnami/projects/my_django
+  </IfDefine>
+  <VirtualHost 127.0.0.1:80 _default_:80>
+    ServerAlias *
+    WSGIProcessGroup my_django
+    Alias /robots.txt /opt/bitnami/projects/my_django/static/robots.txt
+    Alias /favicon.ico /opt/bitnami/projects/my_django/static/favicon.ico
+    Alias /static/ /opt/bitnami/projects/my_django/static/
+    <Directory /opt/bitnami/projects/my_django/static>
+      Require all granted
+    </Directory>
+    WSGIScriptAlias / /opt/bitnami/projects/my_django/myNewSite/wsgi.py
+    <Directory /opt/bitnami/projects/my_django/myNewSite>
+      <Files wsgi.py>
+        Require all granted
+      </Files>
+    </Directory>
+  </VirtualHost>
+
+sudo cp /opt/bitnami/apache/conf/vhosts/sample-https-vhost.conf.disabled /opt/bitnami/apache/conf/vhosts/my_django-https-vhost.conf
+sudo nano /opt/bitnami/apache/conf/vhosts/my_django-https-vhost.conf
+
+<IfDefine !IS_my_django_LOADED>
+    Define IS_my_django_LOADED
+    WSGIDaemonProcess my_django python-home=/opt/bitnami/python python-path=/opt/bitnami/projects/my_django
+  </IfDefine>
+  <VirtualHost 127.0.0.1:443 _default_:443>
+    ServerAlias *
+    SSLEngine on
+    SSLCertificateFile "/opt/bitnami/apache/conf/bitnami/certs/server.crt"
+    SSLCertificateKeyFile "/opt/bitnami/apache/conf/bitnami/certs/server.key"
+    WSGIProcessGroup my_django
+    Alias /robots.txt /opt/bitnami/projects/my_django/static/robots.txt
+    Alias /favicon.ico /opt/bitnami/projects/my_django/static/favicon.ico
+    Alias /static/ /opt/bitnami/projects/my_django/static/
+    <Directory /opt/bitnami/projects/my_django/static>
+      Require all granted
+    </Directory>
+    WSGIScriptAlias / /opt/bitnami/projects/my_django/myNewSite/wsgi.py
+    <Directory /opt/bitnami/projects/my_django/myNewSite>
+      <Files wsgi.py>
+        Require all granted
+      </Files>
+    </Directory>
+  </VirtualHost>

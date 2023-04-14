@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from . forms import RegisterForm
 
 # Create your views here.
+
 def base(request):
     '''
     Renders the base.html template.
