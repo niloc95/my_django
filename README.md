@@ -1,4 +1,4 @@
-<h1 align="center">A Capstone Project with Django & Bootstrap 👋</h1>
+<h1 align="center">A Website Project with Django & Bootstrap 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/niloc95" target="_blank">
@@ -56,7 +56,7 @@ This will start the development server at http://localhost:8000/. You can visit 
   * @since       v1.0
   * ---------------------------------------------------------------------------- -->
 
-* Website: https://frontend.co.za
+* Website: https://django.frontend.co.za
 * Twitter: [@CodeCara](https://twitter.com/CodeCara)
 * GitHub: [@niloc95](https://github.com/niloc95)
 * LinkedIn: [@https:\/\/www.linkedin.com\/in\/nilo-cara\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/nilo-cara\/)
