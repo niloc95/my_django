@@ -18,7 +18,7 @@
 > A modern responsive website, build with Django, Bootstrap, Crispy forms and SQLite
 
 ### 🏠 [Homepage](https://github.com/niloc95/Django_Bootstrap_Website)
-<img src="https://github.com/niloc95/Django_Bootstrap_Website/blob/main/frontpage.png">
+<img src="https://github.com/niloc95/Django_Bootstrap_Website/blob/main/Frontpage_page.webp">
 
 ## Setup
 
