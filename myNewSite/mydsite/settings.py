@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'changeme')
 #DEBUG = bool(int(os.environ.get('DEBUG', 0)))
 DEBUG = False
 
-ALLOWED_HOSTS = ['3.11.220.44', 'django.frontend.co.za']
+ALLOWED_HOSTS = ['about.frontend.co.za', 'django.frontend.co.za']
 # ALLOWED_HOSTS.extend(
 #     filter(
 #         None,

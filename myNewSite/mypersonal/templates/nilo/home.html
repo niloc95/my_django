@@ -3,26 +3,26 @@
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles.css' %}">
 <!-- Hero Section -->
-    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
-        <div class="container">
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
-                    <h1>We are <span class="text-warning">DJ sIMRAN</span></h1>
-                    <h1>We are <span class="text-warning">DJ DJay</span></h1>
-                    <p class="lead my-4">DJ's online or in person with the world's best DJ's</p>
-                    <a href="{% url 'bookings' %}">
-                        <button class="btn btn-primary btn-lg">Book Today</button>
-                    </a>
-                </div>
-                <img class="img-fluid w-50 d-none d-sm-block" src="{% static 'images/DJ.webp'%}" width="auto" alt="">
+<section class="bg-white text-dark p-5 text-center text-sm-start">
+    <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <div>
+                <h1 class="display-3">Hi, I’m<span class="text-warning"> <strong>Nilo</strong> 👋</span></h1>
                 
+                <p class="display-4">I’m a software engineer from Johnnesburg, South Africa</p>
+                <a href="{% url 'contact' %}">
+                    <button class="btn btn btn-outline-dark btn-lg border-0">Contact me</button>
+                </a>
             </div>
-        </div>    
-    </section>
+            <img class="img-fluid w-10 d-none d-sm-block rounded" src="{% static 'images/404x531.webp'%}" width="auto" alt="">
+            
+        </div>
+    </div>    
+</section>
 <!-- End Hero Section -->
 
 <!-- Call to action Section -->
-<section class="bg-primary text-light p-5">
+{% comment %} <section class="bg-primary text-light p-5">
     <div class="container">
         <div class="d-md-flex justify-content-between align-content-center">
             <h3 class=" mb-3 mb-md-0">Get the latest Gigs</h3>
@@ -32,11 +32,11 @@
             </div>
         </div>
     </div>
-</section>
+</section> {% endcomment %}
 <!-- End Call to action Section -->
 
 <!-- Boxes -->
-<section class="p-5">
+{% comment %} <section class="p-5">
     <div class="container">
         <div class="row text-center">
             <div class="col-md">
@@ -85,7 +85,7 @@
 
         </div>
     </div>
-</section>
+</section> {% endcomment %}
 
 <!-- End Boxes -->
 
@@ -94,17 +94,21 @@
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md">
-          <img src="" class="img-fluid" alt="" />
+          <img src="{% static 'images/Fe-logo-black.png'%}" class="img-fluid" alt="" />
         </div>
         <div class="col-md p-5">
-          <h2>Live Online </h2>
+          <h2>My Experience </h2>
           <p class="lead">
-            Whether you are into Serato, Traktor, Rekordbox, or DJay, we got you covered. Our veteran instructors will custom tailor your experience to help you excel with any piece of DJ gear. Anyone with a smart phone or laptop can get started. Scratch welcomes students of all ages and skill levels.
+            With over 15 years of experience in the technology industry, I began as a junior support analyst at Standard Bank Group and progressed to become a Group Operations Manager. However, in November of 2017, I opted to take a hiatus from my professional career to undertake a personal project.
+            Upon completing my personal project, I re-entered the market in 2019 as a freelance software developer. 
+            <br />My extensive experience and expertise with 
+            Python, Javascript, HTML, CSS, MySQL, AWS, and I am constantly exploring and learning new frameworks and languages. This has led me to be a well-rounded front-end developer utilizing JavaScript and various web development tools, with occasional forays into backend solutions using Node or Python.
+            To further advance my career as a software engineer, I have recently joined Hyperion Dev with Stellenbosch University and Harvard University's CS50.
           </p>
           
-          <a href="#" class="btn btn-light mt-3">
+          {% comment %} <a href="#" class="btn btn-light mt-3">
             <i class="bi bi-chevron-right"></i> Read More
-          </a>
+          </a> {% endcomment %}
         </div>
       </div>
     </div>
@@ -114,13 +118,21 @@
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md p-5">
-          <h2>HOW IT WORKS.</h2>
+          <h2>ST: </h2>
           <p class="lead">
-            Scratch online lessons are performed securely 1-on-1 using Zoom and we offer flexible scheduling to allow you to learn at your own pace. Once you make your purchase, you will be paired with an amazing instructor who will contact you to schedule your first lesson.
+            As a frontend software lead, I have a lot of experience in creating websites and web
+            applications using different programming languages and tools such as HTML, PHP, CSS,
+            MySQL, JavaScript, and Python.
+            I am also well-versed in using page builders like Elementor and Oxygen Build, Visual
+            Composer, and plugins like ACF, Meta Box, and Crocoblock to create websites efficiently.
+            In addition, I have knowledge of hosting services such as AWS LightSail, EC2 and S3 buckets,
+            LightSail DNS and AWS Route 53, hosted zone, Domains, AWS Workmail, Plesk, and Cpanel. I
+            am also familiar with cloud platforms like Google Cloud Platform and Microsoft AZURE, as
+            well as Office365 and Office 365 Admin.
+            I have a strong understanding of design and design systems, and I am proficient in using
+            design tools like AdobeXd, Figma, Sketch, Photoshop, and Illustrator.
           </p>
-          <p>
-            Take 1-on-1 lessons live online with veteran Scratch DJ Academy Instructors, when you want, where you want, on whatever equipment you have.
-          </p>
+          
           <a href="#" class="btn btn-light mt-3">
             <i class="bi bi-chevron-right"></i> Read More
           </a>
@@ -136,7 +148,7 @@
 <!-- Start FAQ Section Accordion -->
 <section id="questions" class="p-5">
     <div class="container">
-      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <h2 class="text-center mb-4">My Recent Projects</h2>
       <div class="accordion accordion-flush" id="questions">
         <!-- Item 1 -->
         <div class="accordion-item">
@@ -147,7 +159,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-one"
             >
-            Do you offer Financial assistance?
+            <span class="lead">Growthpoint Properties - April 2022 // Sandton, South Africa</span>
             </button>
           </h2>
           <div
@@ -169,7 +181,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-two"
             >
-            Do you offer financial assistance for Intro classes or private lessons?
+            SaltyLemon GmbH - May 2022 // Hamburg, Germany
             </button>
           </h2>
           <div
@@ -191,7 +203,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-three"
             >
-              What do I need to Know?
+              Levi Strauss & Co. - July 2021 // San Francisco, USA
             </button>
           </h2>
           <div
@@ -219,7 +231,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-four"
             >
-              How Do I sign up?
+              Bettaway - August 2021 // Bryanston, South Africa
             </button>
           </h2>
           <div
@@ -269,8 +281,8 @@
       </div>
     </div>
   </section>
-
-  <section id="instructors" class="p-5 bg-primary">
+<!-- End FAQ-->
+  {% comment %} <section id="instructors" class="p-5 bg-primary">
     <div class="container">
       <h2 class="text-center text-white">Our Instructors</h2>
       <p class="lead text-center text-white mb-5">
@@ -363,8 +375,8 @@
         </div>
       </div>
     </div>
-  </section>
-<!-- End FAQ-->
+  </section> {% endcomment %}
+
 <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <div id="carouselExampleDark" class="carousel carousel-light slide">
         <div class="carousel-indicators">
