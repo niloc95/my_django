@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles.css' %}">
-<!-- Hero Section -->
+{% comment %} <!-- Hero Section --> {% endcomment %}
 <section class="bg-white text-dark p-5 text-center text-sm-start">
     <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
@@ -19,10 +19,148 @@
         </div>
     </div>    
 </section>
-<!-- End Hero Section -->
+{% comment %}<!-- End Hero Section -->{% endcomment %}
 
-<!-- Call to action Section -->
-{% comment %} <section class="bg-primary text-light p-5">
+{% comment %} <!-- Start FAQ Section Accordion --> {% endcomment %}
+<section id="questions" class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-4">My Recent Projects</h2>
+      <div class="accordion accordion-flush" id="questions">
+        <!-- Item 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-one"
+            >
+            <span class="lead">Growthpoint Properties - April 2022 // Sandton, South Africa</span>
+            </button>
+          </h2>
+          <div
+            id="question-one"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+                <strong>A> </strong> For our Accelerated and Part Time Program, we offer a flexible payment installment plan that does not require credit approval or interest. We require a deposit and will automatically deduct monthly payments each month until you are paid in full. The payment plan does include a R5000.00 maintenance fee. <a href="{% url 'bookings' %}">Contact</a> Us today to get started setting up your flexible payment plan.
+            </div>
+              <img src="{% static 'images/Fe-logo-black.png'%}" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-two"
+            >
+            <span class="lead">SaltyLemon GmbH - May 2022 // Hamburg, Germany</span>
+            </button>
+          </h2>
+          <div
+            id="question-two"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+                <strong>A.</strong> No, we do not. All Intro classes and private lessons must be paid in full at the time of registration.
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-three"
+            >
+              <span class="lead">Levi Strauss & Co. - July 2021 // San Francisco, USA</span>Levi Strauss & Co. - July 2021 // San Francisco, USA
+            </button>
+          </h2>
+          <div
+            id="question-three"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              beatae fuga animi distinctio perspiciatis adipisci velit maiores
+              totam tempora accusamus modi explicabo accusantium consequatur,
+              praesentium rem quisquam molestias at quos vero. Officiis ad
+              velit doloremque at. Dignissimos praesentium necessitatibus
+              natus corrupti cum consequatur aliquam! Minima molestias iure
+              quam distinctio velit.
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-four"
+            >
+              <span class="lead">Bettaway - August 2021 // Bryanston, South Africa</span>
+            </button>
+          </h2>
+          <div
+            id="question-four"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              beatae fuga animi distinctio perspiciatis adipisci velit maiores
+              totam tempora accusamus modi explicabo accusantium consequatur,
+              praesentium rem quisquam molestias at quos vero. Officiis ad
+              velit doloremque at. Dignissimos praesentium necessitatibus
+              natus corrupti cum consequatur aliquam! Minima molestias iure
+              quam distinctio velit.
+            </div>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-five"
+            >
+              <span class="lead">VitaForce - September 2021 // Bryanston, South Africa</span>
+            </button>
+          </h2>
+          <div
+            id="question-five"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              beatae fuga animi distinctio perspiciatis adipisci velit maiores
+              totam tempora accusamus modi explicabo accusantium consequatur,
+              praesentium rem quisquam molestias at quos vero. Officiis ad
+              velit doloremque at. Dignissimos praesentium necessitatibus
+              natus corrupti cum consequatur aliquam! Minima molestias iure
+              quam distinctio velit.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% comment %} <!-- End FAQ--> {% endcomment %}
+{% comment %}<!-- Call to action Section --> 
+ <section class="bg-primary text-light p-5">
     <div class="container">
         <div class="d-md-flex justify-content-between align-content-center">
             <h3 class=" mb-3 mb-md-0">Get the latest Gigs</h3>
@@ -32,11 +170,11 @@
             </div>
         </div>
     </div>
-</section> {% endcomment %}
-<!-- End Call to action Section -->
+</section> 
+<!-- End Call to action Section -->{% endcomment %}
 
-<!-- Boxes -->
-{% comment %} <section class="p-5">
+{% comment %}<!-- Boxes -->
+ <section class="p-5">
     <div class="container">
         <div class="row text-center">
             <div class="col-md">
@@ -85,11 +223,10 @@
 
         </div>
     </div>
-</section> {% endcomment %}
+</section> 
+<!-- End Boxes -->{% endcomment %}
 
-<!-- End Boxes -->
-
-<!-- Learn More Section -->
+{% comment %} <!-- Learn More Section --> {% endcomment %}
 <section id="learn" class="p-5">
     <div class="container">
       <div class="row align-items-center justify-content-between">
@@ -114,8 +251,8 @@
     </div>
   </section>
 
-  <section id="learn" class="p-5 bg-dark text-light">
-    <div class="container">
+  <section id="learn" class="p-5 bg-dark text-light ">
+    <div class="container-fluid">
       <div class="row align-items-center justify-content-between">
         <div class="col-md p-5">
           <h2>ST: </h2>
@@ -143,146 +280,11 @@
       </div>
     </div>
   </section>
-<!-- End Learn More Section -->
+{% comment %} <!-- End Learn More Section --> {% endcomment %}
 
-<!-- Start FAQ Section Accordion -->
-<section id="questions" class="p-5">
-    <div class="container">
-      <h2 class="text-center mb-4">My Recent Projects</h2>
-      <div class="accordion accordion-flush" id="questions">
-        <!-- Item 1 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#question-one"
-            >
-            <span class="lead">Growthpoint Properties - April 2022 // Sandton, South Africa</span>
-            </button>
-          </h2>
-          <div
-            id="question-one"
-            class="accordion-collapse collapse"
-            data-bs-parent="#questions"
-          >
-            <div class="accordion-body">
-                <strong>A> </strong> For our Accelerated and Part Time Program, we offer a flexible payment installment plan that does not require credit approval or interest. We require a deposit and will automatically deduct monthly payments each month until you are paid in full. The payment plan does include a R5000.00 maintenance fee. <a href="{% url 'bookings' %}">Contact</a> Us today to get started setting up your flexible payment plan.
-            </div>
-          </div>
-        </div>
-        <!-- Item 2 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#question-two"
-            >
-            SaltyLemon GmbH - May 2022 // Hamburg, Germany
-            </button>
-          </h2>
-          <div
-            id="question-two"
-            class="accordion-collapse collapse"
-            data-bs-parent="#questions"
-          >
-            <div class="accordion-body">
-                <strong>A.</strong> No, we do not. All Intro classes and private lessons must be paid in full at the time of registration.
-            </div>
-          </div>
-        </div>
-        <!-- Item 3 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#question-three"
-            >
-              Levi Strauss & Co. - July 2021 // San Francisco, USA
-            </button>
-          </h2>
-          <div
-            id="question-three"
-            class="accordion-collapse collapse"
-            data-bs-parent="#questions"
-          >
-            <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              beatae fuga animi distinctio perspiciatis adipisci velit maiores
-              totam tempora accusamus modi explicabo accusantium consequatur,
-              praesentium rem quisquam molestias at quos vero. Officiis ad
-              velit doloremque at. Dignissimos praesentium necessitatibus
-              natus corrupti cum consequatur aliquam! Minima molestias iure
-              quam distinctio velit.
-            </div>
-          </div>
-        </div>
-        <!-- Item 4 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#question-four"
-            >
-              Bettaway - August 2021 // Bryanston, South Africa
-            </button>
-          </h2>
-          <div
-            id="question-four"
-            class="accordion-collapse collapse"
-            data-bs-parent="#questions"
-          >
-            <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              beatae fuga animi distinctio perspiciatis adipisci velit maiores
-              totam tempora accusamus modi explicabo accusantium consequatur,
-              praesentium rem quisquam molestias at quos vero. Officiis ad
-              velit doloremque at. Dignissimos praesentium necessitatibus
-              natus corrupti cum consequatur aliquam! Minima molestias iure
-              quam distinctio velit.
-            </div>
-          </div>
-        </div>
-        <!-- Item 5 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#question-five"
-            >
-              Do you help me find a job?
-            </button>
-          </h2>
-          <div
-            id="question-five"
-            class="accordion-collapse collapse"
-            data-bs-parent="#questions"
-          >
-            <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              beatae fuga animi distinctio perspiciatis adipisci velit maiores
-              totam tempora accusamus modi explicabo accusantium consequatur,
-              praesentium rem quisquam molestias at quos vero. Officiis ad
-              velit doloremque at. Dignissimos praesentium necessitatibus
-              natus corrupti cum consequatur aliquam! Minima molestias iure
-              quam distinctio velit.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- End FAQ-->
-  {% comment %} <section id="instructors" class="p-5 bg-primary">
+
+
+{% comment %} <section id="instructors" class="p-5 bg-primary">
     <div class="container">
       <h2 class="text-center text-white">Our Instructors</h2>
       <p class="lead text-center text-white mb-5">
@@ -377,7 +379,7 @@
     </div>
   </section> {% endcomment %}
 
-<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+{% comment %} <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ --> {% endcomment %}
     <div id="carouselExampleDark" class="carousel carousel-light slide">
         <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -386,21 +388,21 @@
         </div>
         <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-            <img src="https://source.unsplash.com/random/1920x1080/?entertainment" class="d-block w-100" alt="...">
+            <img src="https://source.unsplash.com/random/1920x1080/?software" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
             </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-            <img src="https://source.unsplash.com/random/1920x1080/?water" class="d-block w-100" alt="...">
+            <img src="https://source.unsplash.com/random/1920x1080/?code" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Some representative placeholder content for the second slide.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="https://source.unsplash.com/random/1920x1080/?party" class="d-block w-100" alt="...">
+            <img src="https://source.unsplash.com/random/1920x1080/?computer" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>
