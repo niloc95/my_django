@@ -30,6 +30,10 @@ Install Python: Django is written in Python, so you will need to have Python ins
 Install Django: Once you have Python installed, you can use the pip package manager to install Django. Open up your terminal or command prompt and enter the following command:
 
 ```sh
+
+sudo apt install python3-pip
+sudo apt-get install python3-venv
+
 pip install Django
 ```
 
