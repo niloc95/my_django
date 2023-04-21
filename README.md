@@ -1,4 +1,4 @@
-<h1 align="center">A Capstone Project with Django & Bootstrap 👋</h1>
+<h1 align="center">A Website Project with Django & Bootstrap 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/niloc95" target="_blank">
@@ -18,7 +18,7 @@
 > A modern responsive website, build with Django, Bootstrap, Crispy forms and SQLite
 
 ### 🏠 [Homepage](https://github.com/niloc95/Django_Bootstrap_Website)
-<img src="https://github.com/niloc95/Django_Bootstrap_Website/blob/main/Frontpage_page.webp">
+<img src="https://github.com/niloc95/my_django/blob/Production/myNewSite/static/images/Frontend_page.webp">
 
 ## Setup
 
@@ -30,6 +30,10 @@ Install Python: Django is written in Python, so you will need to have Python ins
 Install Django: Once you have Python installed, you can use the pip package manager to install Django. Open up your terminal or command prompt and enter the following command:
 
 ```sh
+
+sudo apt install python3-pip
+sudo apt-get install python3-venv
+
 pip install Django
 ```
 
@@ -56,7 +60,11 @@ This will start the development server at http://localhost:8000/. You can visit 
   * @since       v1.0
   * ---------------------------------------------------------------------------- -->
 
+<<<<<<< HEAD
 * Website: https://about.frontend.co.za
+=======
+* Website: https://django.frontend.co.za
+>>>>>>> c5ad2a7eb3b74d0d45de2aca082ec554fac0c93e
 * Twitter: [@CodeCara](https://twitter.com/CodeCara)
 * GitHub: [@niloc95](https://github.com/niloc95)
 * LinkedIn: [@https:\/\/www.linkedin.com\/in\/nilo-cara\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/nilo-cara\/)
