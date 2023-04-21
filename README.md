@@ -56,7 +56,7 @@ This will start the development server at http://localhost:8000/. You can visit 
   * @since       v1.0
   * ---------------------------------------------------------------------------- -->
 
-* Website: https://frontend.co.za
+* Website: https://about.frontend.co.za
 * Twitter: [@CodeCara](https://twitter.com/CodeCara)
 * GitHub: [@niloc95](https://github.com/niloc95)
 * LinkedIn: [@https:\/\/www.linkedin.com\/in\/nilo-cara\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/nilo-cara\/)
