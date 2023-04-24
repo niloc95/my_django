@@ -17,7 +17,7 @@ def base(request):
     '''
     return render(request,'base.html')
 
-def home(request):
+def home(request, id=None):
     return render(request,'nilo/home.html')
 
 def about(request):
@@ -31,6 +31,7 @@ def contact(request):
 
 def bookings(request):
     return render(request,'nilo/bookings.html')
+
 
 def bookings(response):
     if response.method == "POST":
