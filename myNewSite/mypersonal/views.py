@@ -32,6 +32,9 @@ def contact(request):
 def bookings(request):
     return render(request,'nilo/bookings.html')
 
+def skills(request):
+    return render(request,'nilo/skills.html')
+
 
 def bookings(response):
     if response.method == "POST":

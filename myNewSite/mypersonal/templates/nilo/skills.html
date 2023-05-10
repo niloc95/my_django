@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static%}
+import { Button, TextField } from '@material-ui/core';
+
+
+
+
+{% block content %}
+<section class="bg-white text-dark p-5 text-center text-sm-start">
+
+    <div class="container mt-5 embed-responsive embed-responsive-21by9">
+      
+      <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+           
+            <h1 class="display-3">Hi, I’m<span class="text-warning"> <strong>Nilo</strong> 👋</span></h1>
+            <p class="display-4">I’m a software engineer from Johnnesburg, South Africa</p>
+            <a href="{% url 'contact' %}">
+                <Button variant='contained'>Send</Button>
+                <Button variant='text'>Send</Button>
+                <Button variant='outlined'>Send</Button>
+            </a>
+          </div>
+            <img class="img-fluid w-10 d-none d-sm-block rounded" src="{% static 'images/404x531.webp'%}" width="auto" alt="">
+      </div>
+    </div>    
+</section>
+
+    
+
+
+{% endblock content%}
