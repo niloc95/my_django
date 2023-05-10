@@ -1,0 +1,3 @@
+sudo service postgresql start
+sudo service postgresql status
+db name: main_db
