@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'mypersonal.apps.MypersonalConfig',
     'crispy_forms',
     'crispy_bootstrap4',
+    'jobs.apps.JobsConfig',
+    
 ]
 
 MIDDLEWARE = [
@@ -126,7 +128,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, '/static')
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = '/'
 REGISTER_REDIRECT_URL = '/polls'
@@ -137,6 +139,7 @@ CDN_URL = [
     'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css',
     'https://unpkg.com/aos@2.3.1/dist/aos.css',
     'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css',
+    'https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css',
     
 ]
 
