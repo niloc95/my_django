@@ -60,11 +60,9 @@ This will start the development server at http://localhost:8000/. You can visit 
   * @since       v1.0
   * ---------------------------------------------------------------------------- -->
 
-<<<<<<< HEAD
 * Website: https://about.frontend.co.za
-=======
+
 * Website: https://django.frontend.co.za
->>>>>>> c5ad2a7eb3b74d0d45de2aca082ec554fac0c93e
 * Twitter: [@CodeCara](https://twitter.com/CodeCara)
 * GitHub: [@niloc95](https://github.com/niloc95)
 * LinkedIn: [@https:\/\/www.linkedin.com\/in\/nilo-cara\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/nilo-cara\/)
