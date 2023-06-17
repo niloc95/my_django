@@ -59,9 +59,13 @@ This will start the development server at http://localhost:8000/. You can visit 
   * @link        https://niloc95.github.io/niloc95
   * @since       v1.0
   * ---------------------------------------------------------------------------- -->
+<<<<<<< HEAD
   
-* Website: https://about.frontend.co.za
 =======
+
+>>>>>>> refs/remotes/origin/development
+* Website: https://about.frontend.co.za
+
 * Website: https://django.frontend.co.za
 * Twitter: [@CodeCara](https://twitter.com/CodeCara)
 * GitHub: [@niloc95](https://github.com/niloc95)
