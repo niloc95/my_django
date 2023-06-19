@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 from pathlib import Path
 
-
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', 'changeme')
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = bool(int(os.environ.get('DEBUG', 0)))
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['about.frontend.co.za', 'django.frontend.co.za']
+ALLOWED_HOSTS = []
 # ALLOWED_HOSTS.extend(
 #     filter(
 #         None,
@@ -49,8 +47,6 @@ INSTALLED_APPS = [
     'mypersonal.apps.MypersonalConfig',
     'crispy_forms',
     'crispy_bootstrap4',
-    'jobs.apps.JobsConfig',
-    
 ]
 
 MIDDLEWARE = [
@@ -130,7 +126,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, '/static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = '/'
 REGISTER_REDIRECT_URL = '/polls'
@@ -141,7 +137,6 @@ CDN_URL = [
     'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css',
     'https://unpkg.com/aos@2.3.1/dist/aos.css',
     'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css',
-    'https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css',
     
 ]
 
@@ -152,11 +147,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 #HTTPS SETTINGS
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-SECURE_SSL_REDIRECT = True
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
+# SECURE_SSL_REDIRECT = True
 
 #HSTS SETTINGS
-SECURE_HSTS_SECONDS = 31536000 # 1 YEAR
-SECURE_HSTS_PRELOAD = True
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+# SECURE_HSTS_SECONDS = 31536000 # 1 YEAR
+# SECURE_HSTS_PRELOAD = True
+# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
