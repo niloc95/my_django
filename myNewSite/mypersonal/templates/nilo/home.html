@@ -3,8 +3,8 @@
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles.css' %}">
 {% comment %} <!-- Hero Section --> {% endcomment %}
-<section class="bg-white text-dark p-5 text-center text-sm-start">
-
+<section class="bg-image text-light p-5 text-center text-sm-start">
+  
     <div class="container mt-5 embed-responsive embed-responsive-21by9">
       
       <div class="d-sm-flex align-items-center justify-content-between">
@@ -16,16 +16,16 @@
               <button class="btn btn btn-outline-dark btn-lg border-0">Contact me</button>
             </a>
           </div>
-            <img class="img-fluid w-10 d-none d-sm-block rounded" src="{% static 'images/404x531.webp'%}" width="auto" alt="">
+            {% comment %} <img class="img-fluid w-10 d-none d-sm-block rounded" src="{% static 'images/nilo_about_bg.jpg'%}" width="auto" alt=""> {% endcomment %}
       </div>
     </div>    
 </section>
 {% comment %}<!-- End Hero Section -->{% endcomment %}
 
 {% comment %} <!-- Start FAQ Section Accordion --> {% endcomment %}
-<section id="questions" class="py-5 ">
+<section id="questions" class="py-5 bg-nilo">
     <div class="container">
-      <h2 class="display-3 mb-4">Relevant Experience</h2>
+      <h2 class="display-4 text-light mb-4">Relevant Experience</h2>
       <div class="accordion accordion-flush" id="questions">
         <!-- Item 1 -->
         <div class="accordion-item">
