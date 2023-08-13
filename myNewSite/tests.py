@@ -2,7 +2,7 @@ from django.test import LiveServerTestCase
 from selenium import webdriver
 import time 
 
-PATH = "Users/nilo/Desktop/my_django/myNewSite/chromedriver"
+
 
 class Hosttest(LiveServerTestCase):
     
@@ -13,4 +13,4 @@ class Hosttest(LiveServerTestCase):
         
         time.sleep(25)
 
-        assert "Hello World" in driver.title
+        

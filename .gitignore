@@ -1,4 +1,8 @@
-setting.py
+# Customs files
+chromedriver.app
+chromedriver
+settings.py
+
 Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'mypersonal.apps.MypersonalConfig',
     'crispy_forms',
     'crispy_bootstrap4',
+    'blog'
 ]
 
 MIDDLEWARE = [
