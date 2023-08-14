@@ -1,0 +1,29 @@
+/* Master Sytle Sheets */
+
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+  
+  #map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .news-input {
+      width: 65%;
+    }
+  }
+
+  .bg-image {
+    background-image: url("../images/nilo_about_bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-nilo {
+    background-color: black;
+  }
