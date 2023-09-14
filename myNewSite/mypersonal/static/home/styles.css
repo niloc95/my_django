@@ -3,7 +3,7 @@
 body::before {
   display: block;
   content: '';
-  height: 60px;
+  height: 0px;
 }
   
   #map {
@@ -22,8 +22,27 @@ body::before {
     background-image: url("../images/nilo_about_bg.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat; 
+
   }
 
   .bg-nilo {
     background-color: black;
   }
+
+  .hero-nilo {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust this to your desired height */
+    overflow: hidden;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
