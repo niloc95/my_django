@@ -2,7 +2,7 @@
 <html lang="en">
 {% load static %}
 <!-- ----------------------------------------------------------------------------
-  * @Website     Django and Bootstrap Website -  Project Stellenbosch University 
+  * @Website     Django and Bootstrap Website -  Personal Site 
   * @framework   Django - High-level Python web framework with Bootstrap5 and Crispy Forms
   * @author      Nilo Cara 
   * @copyright   Copyright (c) 2023, Nilo Cara
@@ -13,11 +13,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Engineer - Nilo Cara</title>
-    <link rel="shortcut icon" type="image/png" href="{% static 'images/Fe-logo-white.png' %}"/>
-    <link rel="stylesheet" type="text/css" href="{% static 'home/styles.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'home/images/Fe-logo-white.png' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/styles.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+ 
     {% include 'navbar.html' %}
     {% block header %}
 
@@ -33,8 +34,11 @@
       {% endblock %}
        
     </main>
-	
+    
   </body>
+  <script type="text/javascript" src="{% static 'home/js/navscroll.js' %}"></script>
+  <script type="text/javascript" src="{% static 'home/js/pageanchor.js' %}"></script> 
+  
   
 </html>
 {% include 'footer.html' %}

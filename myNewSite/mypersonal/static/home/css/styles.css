@@ -26,8 +26,8 @@ body::before {
 
   }
 
-  .bg-nilo {
-    background-color: black;
+  .bg-footer {
+    background-color: rgba(41,41,41,0.44);
   }
 
 .hero-nilo {
@@ -45,4 +45,32 @@ body::before {
     transform: translate(-50%, -50%);
     text-align: left;
     color: #fff;
+}
+
+.bg-img-hero {
+    background: url("../images/Johannesburg.webp") rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  animation: fadeInDown 0.5s;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
