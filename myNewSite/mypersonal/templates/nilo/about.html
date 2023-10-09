@@ -4,7 +4,19 @@
 {% block content %}
 
     <!-- Intro settings -->
-      
+  {% comment %} <!-- Hero Section --> {% endcomment %}
+<section id="hero-section" class="hero-nilo">
+  <video autoplay loop muted playsinline><source src="{% static 'images/Landing_page.mp4' %}"></video>
+  <div class="container hero-text">
+    <h1 class="display-4">Hi, I’m<span class="text-warning"> <strong>Nilo Cara</strong> 👋</span></h1>
+    <p class="display-5">a software engineer from Johnnesburg, South Africa</p>
+    
+    <a href="{% url 'contact' %}">
+      <button class="btn btn-outline-light btn-lg">Contact me</button>
+    </a>
+  </div>
+</section>
+{% comment %}<!-- End Hero Section -->{% endcomment %}    
     <!-- Background image -->
 
     <div class="container mt-5">

@@ -1,11 +1,19 @@
 {% extends 'base.html' %}
-
-
-
+{% load static %}
 {%load crispy_forms_tags%}
-
 {% block content %}
-  
+<section id="hero-section" class="hero-nilo">
+  <video autoplay loop muted playsinline><source src="{% static 'images/Landing_page.mp4' %}"></video>
+  <div class="container hero-text">
+    <h1 class="display-4"><span class="text-warning"> <strong>Book a Consultation</strong> 👋</span></h1>
+    <p class="display-5">a software engineer from Johnnesburg, South Africa</p>
+    
+    <a href="{% url 'contact' %}">
+      <button class="btn btn-outline-light btn-lg">Contact me</button>
+    </a>
+  </div>
+</section>
+
 <section class="py-5">
   <div class="container">
     <div class="row my-5">

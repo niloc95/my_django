@@ -1,9 +1,10 @@
 
 {% load static %}
+
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   
   <div class="container">
-      <a class="navbar-brand " href="{% url 'home' %}"><strong>nilo👋</strong></a>
+      <a class="navbar-brand " href="{% url 'home' %}"><strong>home👋</strong></a>
       <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -14,10 +15,10 @@
             <a class="nav-link active" aria-current="page" href="{% url 'bookings' %}">Bookings</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'home' id='question' %}">My Projects</a>
+            <a class="nav-link" href="{% url 'home' %}#my_projects">My Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'about' %}">About</a>
+            <a class="nav-link" href="{% url 'home' %}#aboutme">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'contact' %}">Contact</a>
