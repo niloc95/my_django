@@ -2,8 +2,9 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 #from .forms import BookForm
 from . forms import RegisterForm
-
+from django.urls import reverse
 # Create your views here.
+
 
 def base(request):
     '''
@@ -18,7 +19,10 @@ def base(request):
     return render(request,'base.html')
 
 def home(request, id=None):
-    return render(request,'nilo/home.html')
+    # If id is provided, you can use it in your view logic
+    if id == 'my_projects':
+        return render(request, 'nilo/home.html', {'id': id})
+    return render(request, 'nilo/home.html')
 
 def about(request):
     return render(request,'nilo/about.html')
@@ -34,7 +38,6 @@ def bookings(request):
 
 def skills(request):
     return render(request,'nilo/skills.html')
-
 
 def bookings(response):
     if response.method == "POST":

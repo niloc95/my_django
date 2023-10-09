@@ -3,12 +3,13 @@
 {% block content %}
 
 {% comment %} <!-- Hero Section --> {% endcomment %}
-<section id="hero-section" class="hero-nilo">
-  <video autoplay loop muted playsinline><source src="{% static 'images/Landing_page.mp4' %}"></video>
+<section id="hero-section" class="hero-nilo bg-img-hero">
+  
+  {% comment %} <video autoplay loop muted playsinline><source src="{% static 'images/Landing_page.mp4' %}"></video> {% endcomment %}
   <div class="container hero-text">
-    <h1 class="display-4">Hi, I’m<span class="text-warning"> <strong>Nilo Cara</strong> 👋</span></h1>
-    <p class="display-5">a software engineer from Johnnesburg, South Africa</p>
-    <p class="p-2">Throughout my journey, I've consistently pursued meaningful opportunities and embraced diverse challenges. From owning a small business and being recognized as Employee of the Year at Gijima to earning a Service Excellence merit at SouthernSun and achieving the top rank out of 115 students at Stellenbosch University's Software Engineering Bootcamp, my dedication to helping others and solving problems has remained unwavering.</p>
+    <h1 >Hi, I’m<span class="text-warning"> <strong>Nilo Cara</strong> 👋</span></h1>
+    <p class="display-5">a software engineer from South Africa</p>
+    
     <a href="{% url 'contact' %}">
       <button class="btn btn-outline-light btn-lg">Contact me</button>
     </a>
@@ -16,11 +17,28 @@
 </section>
 {% comment %}<!-- End Hero Section -->{% endcomment %}
 
+
+<section id="aboutme">
+  <div class="container">
+    <div class="d-md-flex align-items-center pt-5 pt-md-5">
+      <div>
+        <h2>Me</h2>
+        <p class="lead">Throughout my journey, I've consistently pursued meaningful opportunities and embraced diverse challenges. From owning a small business and being recognized as Employee of the Year at Gijima to earning a Service Excellence merit at SouthernSun and achieving the top rank out of 115 students at Stellenbosch University's Software Engineering Bootcamp, my dedication to helping others and solving problems has remained unwavering.</p>
+        <p class="lead">Being a web developer, I find immense satisfaction in harnessing my meticulous attention to detail, unwavering passion for creation, and a resolute commitment to my mission to actively contribute to global transformation. This is precisely why I am eagerly looking forward to making a substantial mark within a rapidly expanding organization.</p>
+      </div>
+      <img class="img-fluid" src="{% static 'home/images/404x531.webp'%}"  alt="" />
+    </div>
+    <div>
+      <p class"lead"><strong>Current Focus:</strong> Python || Django || Wagtail || React</p>
+    </div>
+  </div>
+</section>
+
 {% comment %} <!-- Start FAQ Section Accordion --> {% endcomment %}
-<section id="questions" class="pt-5">
+<section id="my_projects" class="pt-5">
     <div class="container">
-      <h2 class="display-4 text-dark ">Relevant Experience</h2>
-      <div class="accordion accordion-flush" id="questions">
+      <h2 class="text-dark">Experience</h2>
+      <div class="accordion accordion-flush">
         <!-- Item 1 -->
         <div class="accordion-item border-0 ">
           <h2 class="accordion-header">
@@ -41,7 +59,7 @@
             <div class="accordion-body lead">
                 <strong>A</strong> For our Accelerated and Part Time Program, we offer a flexible payment installment plan that does not require credit approval or interest. We require a deposit and will automatically deduct monthly payments each month until you are paid in full. The payment plan does include a R5000.00 maintenance fee. <a href="{% url 'bookings' %}">Contact</a> Us today to get started setting up your flexible payment plan.
             </div>
-              <img src="{% static 'images/Fe-logo-black.png'%}" class="img-fluid" alt="" />
+              <img src="{% static 'home/images/Fe-logo-black.png'%}" class="img-fluid" alt="" />
           </div>
         </div>
         <!-- Item 2 -->
@@ -76,7 +94,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-three"
             >
-              <span class="lead display-6">Project Management</span>
+              <span class="lead">Project Management</span>
             </button>
           </h2>
           <div
@@ -439,7 +457,7 @@
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md">
-          <img src="{% static 'images/Fe-logo-black.png'%}" class="img-fluid" alt="" />
+          <img src="{% static 'home/images/Fe-logo-black.png'%}" class="img-fluid" alt="" />
         </div>
         <div class="col-md p-lg-0">
           <h2>My Experience </h2>
